@@ -11,13 +11,28 @@ body {
   background-color: RGB(204, 0, 0);
 }
 
-.container {
-  width: 90%;
-  margin: auto;
-  padding-top: 100%;
-  display: flex;
+.container{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
 }
-
-.left-content,.right-content {
-  flex-basis: 50%;
+.left-content,.right-content{
+    flex-basis: 50%;
+}
+.left-content{
+    display: grid; /* Ce sont des petites cartes */
+    grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr)); /* fr -> Mesure spécifiques à grid */
+    grid-gap:2rem;
+}
+.card{
+    width: 300px;
+    background-color:#9EDEF9;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
