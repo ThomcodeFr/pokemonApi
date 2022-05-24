@@ -1,31 +1,29 @@
- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-* {
-  padding: 0;
-  margin:0;
-  font-family: 'Roboto', sans-serif;
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
-/* permet de resoudre les problèmes de marges en CSS */
-
-body {
-  background-color: RGB(204, 0, 0);
+body{
+    background-color: rgb(204, 0, 0);
 }
 
-.container{
-    width: 90%;
+.container {
+    width: 80%;
     margin: auto;
     padding-top: 100px;
     display: flex;
 }
-.left-content,.right-content{
+.left-content,.right-content {
     flex-basis: 50%;
 }
-.left-content{
-    display: grid; /* Ce sont des petites cartes */
-    grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr)); /* fr -> Mesure spécifiques à grid */
+.left-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
     grid-gap:2rem;
 }
-.card{
+.card {
     width: 300px;
     background-color:#9EDEF9;
     border-radius: 1rem;
@@ -35,4 +33,18 @@ body {
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+}
+
+.right-content {
+    width: 50%;
+    text-align: center;
+    color: black;
+    position: fixed;
+    top: 100px;
+    right: 10px;
+}
+
+.right-content img {
+  margin: 2rem;
+
 }
