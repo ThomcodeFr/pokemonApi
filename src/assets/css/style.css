@@ -1,0 +1,23 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  padding: 0;
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+}
+/* permet de resoudre les problèmes de marges en CSS */
+
+body {
+  background-color: RGB(204, 0, 0);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding-top: 100%;
+  display: flex;
+}
+
+.left-content,.right-content {
+  flex-basis: 50%;
+}
